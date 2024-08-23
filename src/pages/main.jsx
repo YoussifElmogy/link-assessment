@@ -10,9 +10,9 @@ const Main = ({ children }) => {
   const dir = i18n.dir();
 
   return (
-    <div dir={dir}>
+    <div className="layout-wrapper" dir={dir}>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </div>
   );

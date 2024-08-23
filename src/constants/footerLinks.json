@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "title": "Company",
+      "links": [
+        { "to": "/about", "label": "About" },
+        { "to": "/careers", "label": "Careers" },
+        { "to": "/mobile", "label": "Mobile" }
+      ]
+    },
+    {
+      "title": "Contact",
+      "links": [
+        { "to": "/help-faq", "label": "Help/FAQ" },
+        { "to": "/press", "label": "Press" },
+        { "to": "/affiliates", "label": "Affiliates" }
+      ]
+    },
+    {
+      "title": "Media",
+      "links": [
+        { "to": "/news", "label": "News" },
+        { "to": "/photo", "label": "Photo" },
+        { "to": "/video", "label": "Video" }
+      ]
+    }
+  ]
+}

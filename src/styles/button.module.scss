@@ -1,0 +1,50 @@
+@import "variables";
+
+.linkBtn {
+  display: block;
+  padding: $padding-sm $padding-lg;
+  border: none;
+  border-radius: $border-radius-md;
+  font-size: $font-size-md;
+  cursor: pointer;
+  transition: background-color $transition, border-color $transition;
+  text-align: center;
+  text-decoration: none;
+
+  &.contained {
+    background-color: $primary-color;
+    color: $background-color;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+  }
+
+  &.default {
+    background: transparent;
+    padding: 0;
+    display: inline-block;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+    color: $text-color;
+    border: 1px solid $text-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $background-color;
+      border: 1px solid $primary-color;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .linkBtn {
+    display: inline-block;
+  }
+}

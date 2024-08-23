@@ -1,0 +1,48 @@
+@import "variables";
+
+.language-switcher {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.language-switcher-selected {
+  display: flex;
+  align-items: center;
+  padding: $padding-sm;
+  border-radius: $border-radius-sm;
+  background-color: $background-color;
+  font-size: $font-size-md;
+}
+
+.arrow {
+  margin-inline: $padding-sm;
+  transition: transform $transition;
+
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+.language-switcher-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $background-color;
+  border: 1px solid #ddd;
+  border-radius: $border-radius-sm;
+  box-shadow: 0 2px 4px $shadow-color;
+  z-index: 1000;
+}
+
+.language-option {
+  padding: $padding-sm $padding-md;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $primary-color-dark;
+    color: $background-color;
+  }
+}

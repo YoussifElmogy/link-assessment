@@ -24,11 +24,7 @@ const Home = () => {
   console.log(bannerData?.slides);
   return (
     <div>
-      {bannerData?.slides?.map((banner, index) => (
-        <div key={index}>
-          <h1>{banner.title}</h1>
-        </div>
-      ))}
+      <h1 className="text-h1">Home Page</h1>
     </div>
   );
 };
