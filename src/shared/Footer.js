@@ -56,7 +56,7 @@ const Footer = () => {
               <span className="text-gray font-medium text-lg">
                 Discover our app
               </span>
-              <div className="flex items-center gap-2 mt-4">
+              <div className="flex items-center flex-wrap gap-2 mt-4">
                 <img
                   src={googleplay}
                   alt="google play"

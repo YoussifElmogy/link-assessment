@@ -41,3 +41,30 @@ h5,
 h6 {
   font-family: "Volkhov", serif;
 }
+.slick-dots {
+  text-align: start !important;
+  position: static !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.slick-dots li {
+  width: auto !important;
+  height: auto !important;
+}
+.slick-dots li.slick-active div {
+  width: 52px;
+  height: 52px;
+}
+.banner-wrapper {
+  display: grid !important;
+}
+.slick-list {
+  overflow: inherit !important;
+}
+
+[dir="rtl"] .slick-slider {
+  direction: rtl;
+}
+.slick-slider {
+  padding-bottom: 20px;
+}

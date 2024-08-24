@@ -7,6 +7,7 @@ module.exports = {
         primary: "#E97815",
         secondary: "#ff00b7",
         gray: "#5E6282",
+        title: "#181E4B",
       },
       fontFamily: {
         primary: ["Poppins", "sans-serif"],
@@ -19,6 +20,9 @@ module.exports = {
         h4: "1.25rem",
         h5: "1.125rem",
         h6: "1rem",
+      },
+      lineHeight: {
+        h1: "90px",
       },
       container: {
         center: true,

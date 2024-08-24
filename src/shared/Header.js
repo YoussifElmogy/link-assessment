@@ -59,7 +59,7 @@ const Header = () => {
             isMenuOpen ? styles.menuWrapperOpen : ""
           } lg:${styles.menuWrapperDesktop}`}
         >
-          <nav className="lg:mr-9 mr-0">
+          <nav>
             <Link to="/" className="block lg:inline-block lg:px-6 px-2 py-2">
               Home
             </Link>

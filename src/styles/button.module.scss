@@ -14,6 +14,7 @@
   &.contained {
     background-color: $primary-color;
     color: $background-color;
+    padding: 15 px 30px;
 
     &:hover {
       background-color: $primary-color-dark;

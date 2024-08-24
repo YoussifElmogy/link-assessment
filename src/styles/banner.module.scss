@@ -1,0 +1,75 @@
+.bannerTitle {
+  overflow: hidden;
+  min-height: 182px;
+  max-height: 182px;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+    line-height: 50px;
+    max-height: 52px;
+    min-height: 52px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+    line-height: 30px;
+    max-height: 60px;
+    min-height: 60px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 33px;
+    height: 8px;
+    width: 50%;
+    background: linear-gradient(
+      90deg,
+      var(--brush-color) 30%,
+      var(--brush-color) 70%,
+      transparent 100%
+    );
+    z-index: -1;
+  }
+}
+.bannerDescription {
+  overflow: hidden;
+  min-height: 62px;
+  max-height: 62px;
+}
+.playIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+  }
+}
+.headerOverlay {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 150%;
+  top: -240px;
+}
+.imgOverlay {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100%;
+  height: 120%;
+  bottom: -72px;
+  [dir="rtl"] & {
+    background-position: right;
+  }
+}
