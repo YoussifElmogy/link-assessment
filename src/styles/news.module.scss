@@ -1,0 +1,120 @@
+.newsSection {
+  background: #fff;
+  padding-block: 30px;
+}
+.newsTitle {
+  font-size: 50px;
+  color: #14183e;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 67px;
+}
+.newsCategories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  button {
+    background: #e3e3e3;
+    padding: 12px 24px;
+    color: #66cffe;
+    border-radius: 12px;
+  }
+  .activeCategory {
+    background-color: #66cffe;
+    color: #fff;
+  }
+}
+
+.newsImgWrapper {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  &:hover {
+    img {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 88%;
+  }
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+  }
+}
+.newsContent {
+  padding: 27px 20px 40px 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  .newsItemTitle {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #5e6282;
+    line-height: 22px;
+    max-height: 68px;
+    min-height: 68px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: #e97815;
+    }
+  }
+}
+.newsDate {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  svg {
+    color: #13beff;
+    font-size: 20px;
+  }
+}
+.newsCategoryName {
+  background: #e3e3e3;
+  color: #5e6282;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.cardIcons {
+  display: flex;
+  align-items: center;
+  color: #13beff;
+  gap: 12px;
+  font-size: 20px;
+}
+.noNewsMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #5e6282;
+}
+.newsBtn {
+  a {
+    padding: 20px 80px !important;
+  }
+}

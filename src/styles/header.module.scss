@@ -87,6 +87,9 @@ nav {
   margin-inline-end: 3rem;
   a {
     transition: $transition;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #212832;
 
     &:hover {
       color: $primary-color;

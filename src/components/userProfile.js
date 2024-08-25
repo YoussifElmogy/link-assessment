@@ -1,9 +1,9 @@
 import React from "react";
-import LinkButton from "./LinkButton";
+import LinkButton from "./shared/LinkButton";
 
 const UserProfile = () => {
   return (
-    <div className="flex items-center ms-6">
+    <div className="flex items-center lg:ms-6 ms-0">
       <div className="block lg:inline-block lg:px-4 px-2 py-2">
         <LinkButton href="/login">Login</LinkButton>
       </div>

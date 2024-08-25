@@ -5,7 +5,7 @@ const FooterColumn = ({ title, links }) => (
   <div>
     <div className="lg:mb-8 mb-4 font-bold lg:text-xl text-lg">{title}</div>
     {links.map(({ to, label }, index) => (
-      <div className="mb-2">
+      <div className="mb-2" key={index}>
         <Link
           key={index}
           to={to}
