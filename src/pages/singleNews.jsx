@@ -21,6 +21,7 @@ const SingleNews = () => {
       }
     };
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newsId]);
 
   if (loading) {

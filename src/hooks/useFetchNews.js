@@ -30,6 +30,7 @@ const useFetchNews = (initialCategory = "all", limit) => {
       }
     };
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [limit]);
 
   useEffect(() => {

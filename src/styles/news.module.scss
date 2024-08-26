@@ -118,3 +118,15 @@
     padding: 20px 80px !important;
   }
 }
+.favIcon {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: red;
+  }
+}
+.shareIcon {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: #e97815;
+  }
+}

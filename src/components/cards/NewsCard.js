@@ -43,8 +43,8 @@ const NewsCard = ({ newsItem, categories, selectedCategory, fromHomePage }) => {
             <span></span>
           )}
           <div className={styles.cardIcons}>
-            <MdFavoriteBorder />
-            <IoShareSocialSharp />
+            <MdFavoriteBorder className={styles.favIcon} />
+            <IoShareSocialSharp className={styles.shareIcon} />
           </div>
         </div>
       </div>
