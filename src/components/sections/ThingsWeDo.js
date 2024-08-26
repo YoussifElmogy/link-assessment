@@ -18,8 +18,10 @@ const ThingsWeDo = () => {
     <div className={styles.thingWeDoSection}>
       <span className={styles.thingsTitle}>Things We Do</span>
       <div className="xl:grid grid-cols-12 flex flex-col-reverse">
-        <div className="xl:col-span-7 col-span-12 xl:ms-14 ms-0">
-          <div className="md:grid xl:grid-rows-5 lg:grid-rows-2 md:grid-cols-3 grid-cols-1 block ">
+        <div className="xl:col-span-7 col-span-12 ">
+          <div
+            className={`md:grid xl:grid-rows-5 lg:grid-rows-2 md:grid-cols-3 grid-cols-1 block ${styles.thingsWeDoContent} `}
+          >
             {thingsWeDoData.items.map((item, index) => (
               <div
                 key={index}

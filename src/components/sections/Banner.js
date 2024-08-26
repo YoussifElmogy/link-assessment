@@ -23,14 +23,32 @@ const Banner = () => {
     arrows: false,
     slidesToScroll: 1,
 
-    customPaging: (i) => (
-      <div
-        className="w-9 h-9 rounded-full"
-        style={{
-          backgroundColor: `#${sortedSlides[i].colorCode}`,
-        }}
-      ></div>
-    ),
+    customPaging: (i) => {
+      const totalSlides = sortedSlides.length;
+      const numberOfStaticDots = 8;
+      const staticDots = Array.from(
+        { length: numberOfStaticDots },
+        (_, index) => (
+          <div
+            key={`static-dot-${i}-${index}`}
+            className="static-dot w-1 h-1 rounded-full bg-gray mx-1"
+          ></div>
+        )
+      );
+      return (
+        <div className="flex items-center">
+          {i > 0 && staticDots.slice(0, Math.floor(numberOfStaticDots / 2))}
+          <div
+            className="w-9 h-9 rounded-full mx-1 active-dot"
+            style={{
+              backgroundColor: `#${sortedSlides[i].colorCode}`,
+            }}
+          ></div>
+          {i < totalSlides - 1 &&
+            staticDots.slice(Math.floor(numberOfStaticDots / 2))}
+        </div>
+      );
+    },
     dotsClass: "slick-dots",
   };
 
@@ -56,13 +74,13 @@ const Banner = () => {
                 {item.category}
               </span>
               <h1
-                className={`${styles.bannerTitle} text-h1 font-bold mb-4 text-title leading-h1`}
+                className={`${styles.bannerTitle} text-h1 font-bold mb-4 text-title leading-h1 line-clamp-2`}
                 style={{ "--brush-color": `#${item.colorCode}` }}
               >
                 {item.title}
               </h1>
               <p
-                className={`${styles.bannerDescription} text-sm text-gray font-medium mb-8`}
+                className={`${styles.bannerDescription} text-sm text-gray font-medium mb-8 line-clamp-3`}
               >
                 {item.brief}
               </p>

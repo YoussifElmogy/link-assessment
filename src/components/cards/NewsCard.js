@@ -21,7 +21,9 @@ const NewsCard = ({ newsItem, categories, selectedCategory, fromHomePage }) => {
           to={fromHomePage ? `news/${newsItem.id - 1}` : `${newsItem.id - 1}`}
         >
           {" "}
-          <h3 className={styles.newsItemTitle}>{newsItem.title}</h3>
+          <h3 className={`${styles.newsItemTitle} line-clamp-3`}>
+            {newsItem.title}
+          </h3>
         </Link>
 
         <span className={styles.newsDate}>

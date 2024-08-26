@@ -31,7 +31,7 @@
       "brief": "Link Development,Our people, processes, and technologies thrive on digital breakthroughs.",
       "colorCode": "A6E51C",
       "imgUrl": "trendy.jpeg",
-      "itemUrl": "/Trendy",
+      "itemUrl": "https://react.dev/",
       "videoUrl": "/Trendy",
       "vectorImg": "trendy.svg",
       "order": 2
